@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=
+    , initial-scale=1.0" />
+        <link rel="icon" href="./images/Alien.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <title>HTML Basics</title>
+    </head>
+    <body>
+        <h1 id="header">My Notes of Interesting HTML Stuff</h1>
+        <h2>------Text Elements------</h2>
+        <h3>------Header Tags------</h3>
+        <ul>
+            <li>
+                Do not use headers to resize text. Use the css font-size
+                property
+            </li>
+            <li>
+                Do not skip heading levels. Always start from h1 => h2 => h3 =>
+                h3 => h2 etc.
+            </li>
+        </ul>
+        <h3>------Anchor Tags------</h3>
+        <a href="./images/web_fun_robot.gif">Page Structure Gif</a>
+        <a href="https://login.codingdojo.com/m/283/8966/60776"
+            >How The Web Works - Platform</a
+        >
+        <a href="#about_you">Tell Us About Yourself</a>
+        <h3>------paragraph Tags ------</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Id unde obcaecati animi esse tempore <em>exercitationem</em> magnam
+            accusamus excepturi inventore. <br />
+            <strong>Accusamus et obcaecati </strong> sed explicabo distinctio
+            fuga rerum repudiandae, voluptatibus aliquam.
+        </p>
+        <hr />
+        <h2>------Lists------</h2>
+        <h3>Foods</h3>
+        <h4>------Do Like------</h4>
+        <ul>
+            <li>Dumplings</li>
+            <li>BLT</li>
+            <li>Carne asada fries</li>
+            <li>Oatmeal Cream Pies</li>
+            <li>mango salsa</li>
+            <li>Tacos</li>
+        </ul>
+        <h4>------Dont like------</h4>
+        <ol type="I">
+            <li>
+                Vegatables
+                <ol>
+                    <li>Brussle Sprouts</li>
+                    <li>Celery</li>
+                    <li>Green beans</li>
+                </ol>
+            </li>
+            <li>
+                Pasta
+                <ol type="a">
+                    <li>Spaghetti</li>
+                    <li>Bowtie</li>
+                    <li>subItem</li>
+                </ol>
+            </li>
+        </ol>
+        <hr />
+        <h2>------Tables------</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nathan</td>
+                    <td>Taylor</td>
+                    <td>nt@email.com</td>
+                </tr>
+                <tr>
+                    <td>Test</td>
+                    <td>McTesterson</td>
+                    <td>tmt@email.com</td>
+                </tr>
+                <tr>
+                    <td>Ben</td>
+                    <td>Jammin</td>
+                    <td>bj@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+        <h2>------Forms------</h2>
+        <form id="about_you" action="#">
+            <!-- form content/inputs -->
+            <div class="form_group">
+                <label
+                    >First Name:
+                    <input
+                        type="text"
+                        name="first_name"
+                        value="Edit Your Name" />
+                </label>
+            </div>
+            <label for="fav_color">Favorite Color</label>
+            <input type="color" name="profile_color" id="fav_color" />
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="16" />
+            <label for="dob">When were you born?</label>
+            <input type="date" name="dob" id="dob" />
+            <label for="password">Password</label>
+            <input type="password" name="pass" id="password" />
+            <label for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email please" />
+            <label for="option_dropdpwn">Pick One:</label>
+            <select
+                name="variable_to_bind_selected_option"
+                id="option_dropdown">
+                <option selected disabled>Select An Option</option>
+                <option value="opt1">Option 1</option>
+                <option value="opt2">Option 2</option>
+                <option value="opt3">Option 3</option>
+            </select>
+            <label for="review_something">Post a Review</label>
+            <textarea id="review_something" cols="70" rows="10"></textarea>
+            <label for="gender">
+                Gender Identity
+                <label for="option1">option1</label>
+                <input type="radio" name="gender" id="option1" />
+                <label for="option2">option2</label>
+                <input type="radio" name="gender" id="option2" />
+                <label for="option3">option3</label>
+                <input type="radio" name="gender" id="option3" />
+                <label for="option4">option4</label>
+                <input type="radio" name="gender" id="option4" />
+            </label>
+            <label for="accept">Are you a robot?</label>
+            <input type="checkbox" name="is_robot" id="accept" />
+            <label for="meeting_time">Meet When?</label>
+            <input
+                type="datetime-local"
+                name="meeting_time"
+                id="meeting_time" />
+
+            <!-- button to submit form -->
+            <input type="submit" value="Submit" />
+        </form>
+        <hr />
+        <h2>------Images/Videos------</h2>
+        <h3>Favorite coding meme</h3>
+        <img src="./images/family-guy-css.gif" alt="family-guy" />
+        <img src="./images/htpl.png" alt="htpl" />
+        <img src="./images/web_fun_robot.gif" alt="robot" />
+        <h3>Videos</h3>
+        <video
+            src="./videos/12203744_640_360_30fps.mp4"
+            controls
+            autoplay
+            loop></video>
+        <a href="#header">Back To Top</a>
+    </body>
+</html>
